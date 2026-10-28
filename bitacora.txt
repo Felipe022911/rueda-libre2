@@ -1,0 +1,7 @@
+Request URL file:///home/cohorte8/Desktop./rueda-libre/rueda-libre/index.html
+Request method
+GET
+Status code
+200 OK
+Referrer policy
+strict-origin-when-cross-origin

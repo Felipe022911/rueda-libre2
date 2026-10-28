@@ -1,0 +1,130 @@
+:root {
+    --verde-ruta: #1E7A4F;
+    --naranja-pedal: #F39A2B;
+    --azul-noche: #14213D;
+    --crema: #FAF6EF;
+    --gris-asfalto: #5B6470;
+    --blanco: #FFFFFF;
+
+    --fuente-titulos: 'Montserrat', sans-serif;
+    --fuente-texto: 'Open Sans', sans-serif;
+}
+
+/* Clases utilitarias de marca aplicadas con variables */
+.font-titulos {
+    font-family: var(--fuente-titulos) !important;
+}
+
+body {
+    font-family: var(--fuente-texto) !important;
+}
+
+.bg-crema {
+    background-color: var(--crema) !important;
+}
+
+.bg-azul-noche {
+    background-color: var(--azul-noche) !important;
+}
+
+.bg-verde-ruta {
+    background-color: var(--verde-ruta) !important;
+}
+
+.bg-naranja-pedal {
+    background-color: var(--naranja-pedal) !important;
+}
+
+.text-gris-asfalto {
+    color: var(--gris-asfalto) !important;
+}
+
+.text-azul-noche {
+    color: var(--azul-noche) !important;
+}
+
+.text-verde-ruta {
+    color: var(--verde-ruta) !important;
+}
+
+.text-naranja-pedal {
+    color: var(--naranja-pedal) !important;
+}
+
+#menu a.activo,
+#menu a:hover {
+    background-color: var(--verde-ruta);
+    border-radius: 4px;
+}
+
+
+.whatsapp-flotante {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25D366;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.whatsapp-flotante:hover {
+    background-color: #1EBE5D;
+    color: #FFFFFF;
+}
+
+#nuestra-flota .card-img-top,
+#galeria-rutas-seccion .card-img-top,
+#servicios .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+#nuestra-flota .card,
+#galeria-rutas-seccion .card,
+#servicios .card {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+#nuestra-flota .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Botones de reserva alineados abajo */
+#nuestra-flota .card-body .btn {
+    margin-top: auto;
+}
+
+/* Imágenes de servicios al final de las tarjetas */
+#servicios .card-img-top {
+    margin-top: auto;
+    border-radius: 8px;
+}
+
+#nuestra-flota .card-img-top {
+    object-fit: contain;
+    background-color: #ffffff;
+}
+
+
+@media (max-width: 576px) {
+
+    #nuestra-flota .card-img-top,
+    #galeria-rutas-seccion .card-img-top,
+    #servicios .card-img-top {
+        height: 220px;
+    }
+}
