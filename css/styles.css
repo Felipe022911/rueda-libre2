@@ -1,75 +1,119 @@
 :root {
+    /* Paleta de colores de marca */
     --verde-ruta: #1E7A4F;
+    --verde-ruta-rgb: 30, 122, 79;
     --naranja-pedal: #F39A2B;
     --azul-noche: #14213D;
     --crema: #FAF6EF;
     --gris-asfalto: #5B6470;
     --blanco: #FFFFFF;
 
+    /* Sobrescritura de variables globales de Bootstrap */
+    --bs-primary: var(--verde-ruta);
+    --bs-primary-rgb: var(--verde-ruta-rgb);
+    --bs-link-color: var(--verde-ruta);
+    --bs-link-hover-color: #145537;
+    --bs-body-font-family: 'Open Sans', sans-serif;
+    --bs-border-radius: 8px;
+
+    /* Fuentes de la marca */
     --fuente-titulos: 'Montserrat', sans-serif;
     --fuente-texto: 'Open Sans', sans-serif;
 }
 
-/* Clases utilitarias de marca aplicadas con variables */
-.font-titulos {
-    font-family: var(--fuente-titulos) !important;
+/* Personalización del botón primario (Verde Ruta) */
+.btn-primary {
+    --bs-btn-bg: var(--verde-ruta);
+    --bs-btn-border-color: var(--verde-ruta);
+    --bs-btn-hover-bg: #145537;
+    --bs-btn-hover-border-color: #145537;
+    --bs-btn-active-bg: #0e3d27;
+    --bs-btn-active-border-color: #0e3d27;
+    --bs-btn-color: #FFFFFF;
 }
 
-body {
-    font-family: var(--fuente-texto) !important;
+/* Variante propia para Naranja Pedal */
+.btn-naranja {
+    --bs-btn-bg: var(--naranja-pedal);
+    --bs-btn-border-color: var(--naranja-pedal);
+    --bs-btn-hover-bg: #d88015;
+    --bs-btn-hover-border-color: #d88015;
+    --bs-btn-active-bg: #bd6e0f;
+    --bs-btn-active-border-color: #bd6e0f;
+    --bs-btn-color: #14213D;
+}
+
+/* Clases utilitarias de marca */
+.font-titulos {
+    font-family: var(--fuente-titulos);
 }
 
 .bg-crema {
-    background-color: var(--crema) !important;
+    background-color: var(--crema);
 }
 
 .bg-azul-noche {
-    background-color: var(--azul-noche) !important;
+    background-color: var(--azul-noche);
 }
 
 .bg-verde-ruta {
-    background-color: var(--verde-ruta) !important;
+    background-color: var(--verde-ruta);
 }
 
 .bg-naranja-pedal {
-    background-color: var(--naranja-pedal) !important;
+    background-color: var(--naranja-pedal);
 }
 
 .text-gris-asfalto {
-    color: var(--gris-asfalto) !important;
+    color: var(--gris-asfalto);
 }
 
 .text-azul-noche {
-    color: var(--azul-noche) !important;
+    color: var(--azul-noche);
 }
 
 .text-verde-ruta {
-    color: var(--verde-ruta) !important;
+    color: var(--verde-ruta);
 }
 
 .text-naranja-pedal {
-    color: var(--naranja-pedal) !important;
+    color: var(--naranja-pedal);
 }
 
-#menu a.activo,
-#menu a:hover {
-    background-color: var(--verde-ruta);
-    border-radius: 4px;
+/* Estilos de títulos y footer */
+.titulo-seccion {
+    position: relative;
+    padding-bottom: 0.5rem;
 }
 
+.titulo-seccion::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--naranja-pedal);
+    margin-top: 0.4rem;
+}
 
+.footer-custom {
+    border-top: 4px solid var(--naranja-pedal);
+}
+
+/* Botón flotante WhatsApp */
 .whatsapp-flotante {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
     background-color: #25D366;
     color: #FFFFFF;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.2rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 700;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+    display: flex;
+    align-items: center;
 }
 
 .whatsapp-flotante:hover {
@@ -77,54 +121,59 @@ body {
     color: #FFFFFF;
 }
 
+/* Dimensiones de imágenes en Cards */
 #nuestra-flota .card-img-top,
 #galeria-rutas-seccion .card-img-top,
 #servicios .card-img-top {
     width: 100%;
-    height: 250px;
+    height: 220px;
     object-fit: cover;
     object-position: center;
-    display: block;
-}
-
-
-#nuestra-flota .card,
-#galeria-rutas-seccion .card,
-#servicios .card {
-    height: 100%;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-
-#nuestra-flota .card-body {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-/* Botones de reserva alineados abajo */
-#nuestra-flota .card-body .btn {
-    margin-top: auto;
-}
-
-/* Imágenes de servicios al final de las tarjetas */
-#servicios .card-img-top {
-    margin-top: auto;
-    border-radius: 8px;
 }
 
 #nuestra-flota .card-img-top {
     object-fit: contain;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
+.banner-carrusel {
+    height: 380px;
+    object-fit: cover;
+    object-position: center;
+}
 
-@media (max-width: 576px) {
+#carruselPromociones .carousel-caption {
+    background-color: rgba(20, 33, 61, 0.85);
+    border-radius: 8px;
+    text-align: left;
+}
 
-    #nuestra-flota .card-img-top,
-    #galeria-rutas-seccion .card-img-top,
-    #servicios .card-img-top {
+/* Ajustes exclusivos para celulares y pantallas muy pequeñas (<= 767px) */
+@media (max-width: 767.98px) {
+    .banner-carrusel {
         height: 220px;
+    }
+
+    #carruselPromociones .carousel-caption {
+        position: relative !important;
+        right: 0 !important;
+        left: 0 !important;
+        bottom: 0 !important;
+        padding: 1.25rem 1rem 2.5rem 1rem !important;
+        background-color: var(--azul-noche) !important;
+        border-radius: 0 !important;
+        text-align: center !important;
+    }
+
+    #carruselPromociones .carousel-caption h3 {
+        font-size: 1.1rem;
+    }
+
+    #carruselPromociones .carousel-caption p {
+        font-size: 0.85rem;
+    }
+
+    #carruselPromociones .carousel-indicators {
+        margin-bottom: 0.5rem;
     }
 }

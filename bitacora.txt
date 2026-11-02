@@ -5,3 +5,27 @@ Status code
 200 OK
 Referrer policy
 strict-origin-when-cross-origin
+
+----------------------------------------------------------
+Semana 1
+----------------------------------------------------------
+dia 1: se realizo la configuracion inicial de la pagina con sus jerarquias tambien se crean las carpetas se inicializan los git y lo organizacion de las 3 paginas
+en este dia no hubo necesidad de uso de la ia generativa en ningun momento todo fue trabajo autonomo
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+dia 2:  se organiza la la pagina por secciones para darle orden a la pagina lo cual hace que su visualizacion y estetica sea mas clara
+aparte se crean los formularios con sus caracteristicas campos obligatorios y patrones
+en este dia el uso de la IA se llevo mas que todo para la logica de los patrones de los requerimientos como para los numeros de celulares 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+dia 3: se realizo la integracion de css con todos los valores dados posiciones medidas y colores aparte de darle las propiedades a cada elemento
+en este dia gran parte de la implementacion fue usando uso de ia casi un 60% para poder dar los valores exactos en cada uno de los parametros puestos y las variables
+pero se entiende que parametrizaciones realizo el porque y se entiende el uso de cada usando
+
+-----------------------------------------------------------------------------------------------------
+semana 2
+--------------------------------------------------------------------------------------------------
+dia 1 :se termina de organizar todo con el css se le da orden se crean las secciones con la grilla aparte de que ponen los botones para mandar a reservas mostrando precios 
+en este dia el uso de IA fue minima mas que todo se uso para el css y para explicaiones de html las cuales despues de busquedas con errores de organizacion se recurrio a su uso
+dia 2: se empieza la migracion a boostrap este dia casi en 60-70% del trabajo fue apoyado en la IA especialmente el modelo gemini para entender y poder usar correctamente boostrap
+el trabajo principalmente fue la migracion y parte estetica del proyecto teniendo la mayor parte en entender el funcionamiento de esta herramienta que aunque da estetica es un poco mas complicada
+dia 3: se termina completamente la integracion a boostrap se crea el menu hamburguesa y el carrusel se tuvo problemas por los enlaces de boostrap que no funcionaban y mas que todo en el apartado responsive
+la solucion fue orientar el proyecto al responsive desde el css para poder darle forma a la pagina antes de realizar el push de finalizacion
